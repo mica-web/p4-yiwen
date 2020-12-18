@@ -1,0 +1,41 @@
+.mission {
+    padding-left: 22px;
+
+    li {
+        margin-top: 5px;
+    }
+}
+
+.pic-our-story {
+    display: block;
+    margin: 30px auto 0;
+}
+
+.time {
+    margin-top: 10px;
+}
+
+#info {
+    margin-top: 30px;
+
+    font: {
+        size: 20px;
+        weight: 500;
+    }
+}
+
+#info,
+#intro {
+    color: $green;
+    font-family: $font-serif;
+    text-align: center;
+}
+
+#intro {
+    font: {
+        size: 30px;
+        weight: 600;
+    }
+
+    margin-top: 30px;
+}

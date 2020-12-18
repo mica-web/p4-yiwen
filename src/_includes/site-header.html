@@ -1,0 +1,34 @@
+<header class="site-header">
+
+  <nav class="site-nav js-toggle-menu">
+    <button type="button" class="u-button-reset js-toggle-trigger" aria-controls="site-menu">
+      <span aria-hidden="true" class="menu-icon">
+        <div class="menu-icon__line"></div>
+        <div class="menu-icon__line"></div>
+        <div class="menu-icon__line"></div>
+      </span>
+      Menu
+    </button>
+    <ul id="site-menu" class="u-list-reset nav-list">
+      {% assign nav = collections.nav | sortByPageOrder %}
+      {% for item in nav %}
+      <li class="navlist" {% if page.url == item.url %} aria-current="page" {% endif %}>
+        <a href="{{ item.url }}">
+          {{ item.data.pageTitle }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+
+  </nav>
+
+  {% if page.url == "/" %}
+  <p class="site-logo">
+    <img class="site-logo" src="{{ siteData.logo }}" alt="{{ siteData.name }}">
+  </p>
+  {% else %}
+  <a href="/">
+    <img class="site-logo" src="{{ siteData.logo }}" alt="{{ siteData.name }}">
+  </a>
+  {% endif %}
+</header>

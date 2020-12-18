@@ -1,0 +1,64 @@
+.site-header {
+    align-items: start;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    position: relative;
+
+    a {
+        color: black;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    li {
+        margin-top: 10px;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .nav-list {
+        background-color: $yellow;
+        display: block;
+        opacity: 0.9;
+        top: 55px;
+        width: 190px;
+        padding: 5px;
+        position: absolute;
+    }
+
+    .site-logo {
+        order: 2;
+        width: 100px;
+        margin: 0;
+    }
+
+    [aria-current=page] a {
+        color: $green;
+        font-weight: 600;
+    }
+
+    [aria-expanded="true"] .vert {
+        display: none;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .site-header {
+        padding-top: 30px;
+
+        .navlist {
+            display: inline;
+            margin-right: 50px;
+        }
+
+        .nav-list {
+            top: 0;
+            width: 800px;
+            position: relative;
+        }
+    }
+}

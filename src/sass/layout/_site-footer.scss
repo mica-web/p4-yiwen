@@ -1,0 +1,27 @@
+.site-footer {
+    background-color: $darkgrey;
+    color: $yellow;
+    font-size: 12px;
+    font-weight: 500;
+    padding-top: 15px;
+    padding-bottom: 35px;
+    margin: 0 -20px -20px;
+
+
+    .footer-info,
+    .footer-name {
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+
+@media (min-width: 768px) {
+
+    .site-footer {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 2;
+        margin: 0 -300px 0 -300px;
+    }
+}

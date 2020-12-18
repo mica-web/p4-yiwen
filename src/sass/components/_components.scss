@@ -1,0 +1,71 @@
+@import "donation-form", "homepage", "homepage-grid", "logo-grid", "site-nav";
+
+button svg {
+    height: 15px;
+}
+
+figure {
+    margin: 0;
+
+    a {
+        color: $green;
+        font-weight: 500;
+    }
+}
+
+h2 {
+    color: $green;
+    font-family: $font-serif;
+    font-size: 18px;
+    margin-top: 50px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.body-ul {
+    padding-left: 20px;
+}
+
+.donation-sub {
+    color: $green;
+    font-weight: 600;
+    list-style: none;
+    text-align: center;
+    padding-left: 0;
+}
+
+.first-paragraph {
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+.not-found {
+    padding-top: 100px;
+}
+
+.not-found,
+.page-title {
+    color: $green;
+    font-family: $font-serif;
+}
+
+#pic-homepage {
+    margin-top: 30px;
+}
+
+@media (min-width: 768px) {
+
+    .job-traning-program-grid {
+        display: grid;
+        gap: 2em;
+        grid-template-areas:
+            "life-skills pic-job-training-program";
+    }
+
+    .pic-job-training-program {
+        margin-top: 90px;
+    }
+
+}

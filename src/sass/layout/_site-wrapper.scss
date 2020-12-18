@@ -1,0 +1,42 @@
+.site-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 20px;
+}
+
+body {
+    background-color: $yellow;
+
+    font: {
+        family: $font-sans;
+        size: 16px;
+    }
+
+    height:100%;
+}
+
+main {
+    flex: 1 0 auto;
+    padding-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+
+    main {
+        padding-top: 20px;
+    }
+
+    .site-wrapper {
+        margin: 0 40px 0 40px;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .site-wrapper {
+        max-width: 1000px;
+        margin: 0 auto 0 auto;
+    }
+
+}
